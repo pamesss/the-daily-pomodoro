@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Daily Pomodoro</title>
+	<meta charset="UTF-8">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+	<script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="whiteColumn borderLeft"></div>
+    <div class="whiteColumn borderLeft"></div>
+	<div class="timerBtnContainer">
+        <button class="timerBtn" id="pomodoroBtn" type="button" onclick="pomodoroTime()">Pomodoro</button>
+        <button class="timerBtn" id="shortBtn" type="button" onclick="shortBreak()">Short Break</button>
+        <button class="timerBtn" id="longBtn" type="button" onclick="longBreak()">Long Break</button>
+    </div>
+	<div id="clockImage">
+        <img src="images/clock .png" alt="">
+    </div>
+	<div id="digitalTimer">00:00</div>
+
+    <!--hamburger button content-->
+	<button class="hamburgerBtn" id="longBtn" type="button"></button>
+	<div id="hamburgerContent"> 
+		<div class="notificationAlertSwitch">
+            <p class="sliderLabel">ALLOW ALERTS?</p>
+            <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+            </label> 
+        </div>
+		
+		<div class="soundSwitch">
+            <p class="sliderLabel">ALARM SOUND OFF/ON</p>
+            <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+            </label>
+        </div>
+		
+	    <div class="pomodoroInfo">
+            <span>What is pomodoro?</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odit consequatur velit voluptates minus officiis ad excepturi exercitationem vitae, officia minima, error alias nihil delectus id nemo. Vitae similique ab necessitatibus veritatis dolor, nemo fuga quas non harum obcaecati nisi?</p>
+        </div>
+		<span class="credits">created by <a href="https://github.com/pamesss" target="_blank">@pamesss</a></span>
+	</div>
+</body>
+</html>

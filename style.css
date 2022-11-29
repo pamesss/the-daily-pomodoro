@@ -1,0 +1,158 @@
+/*layers are organized by layers*/
+
+/*BUTTONS - TOP LAYER*/
+.timerBtnContainer {
+    z-index: 3;
+    display: flex;
+    justify-content:space-evenly;
+    flex-flow: row wrap;
+    gap: 60px;
+    position:fixed;
+    width: 100vw;
+    top: 80px;
+}
+.timerBtn {
+    cursor: pointer;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+    height: 10vh;
+    width: 16vw;
+}
+
+/*ICONS FOR CONTROLLING TIMER*/
+
+
+/*HAMBURGER MINI-MENU*/
+.hamburgerBtn {
+    z-index: 3;
+    position: fixed;
+    bottom: 25px;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+#hamburgerContent {
+    z-index: 3;
+    position:fixed;
+    bottom: 25px;
+    left: 50px;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 330px;
+    height: 480px;
+    padding: 14px;
+}
+.notificationAlertSwitch, .soundSwitch {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.sliderLabel {
+    font-size: 18px;
+    margin: 0;
+    display: inline;
+    vertical-align: bottom;
+}
+/*SWITCH BUTTONS - original by W3Schools, modified by me*/
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 62px;
+        height: 34px;
+}
+  
+    .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+}
+  
+    .slider {
+        float: right;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .2s;
+}
+  
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .2s;
+}
+  
+     input:checked + .slider {
+        background-color: #2196F3;
+}
+  
+     input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+}
+  
+     input:checked + .slider:before {
+        transform: translateX(26px);
+}
+    .slider.round:before {
+        border-radius: 50%;
+}
+    .slider.round {
+        border-radius: 34px;
+}
+
+.credits {
+    position:absolute; 
+    bottom:0; 
+    width: inherit;
+    text-align: center;
+    padding: 10px 0px;
+    border-top: black 1px dashed;
+}
+
+/*CLOCK IMAGE*/
+#clockImage {
+    z-index: 2;
+    object-fit: fill;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+/*DIGITAL TIMER TO JS*/
+#digitalTimer {
+    position: fixed;
+    width: 440px;
+    height: 180px;
+    top: 400px;
+    right: 589px;
+    transform: rotate(1.0deg) skew(-1deg);
+    padding: 0px 37px 80px 37px;
+    font-size: 12em;
+    text-align: end;
+    color: white;
+    background-color: rgb(33, 32, 37);
+}
+
+/* BACKGROUND IMAGE*/
+body {
+    background-image: url(images/placeholderBg.jpg);
+    background-size: cover;
+    margin: 0px;
+}
